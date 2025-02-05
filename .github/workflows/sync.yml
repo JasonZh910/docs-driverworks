@@ -12,7 +12,7 @@ jobs:
     - name: Sync with Upstream
       uses: aormsby/Fork-Sync-With-Upstream-action@v3.4
       with:
-        target_repo_token: ${{ secrets.GITHUB_TOKEN }}
+        target_repo_token: ${{ secrets.UPSTREAM_SYNC_TOKEN }}
         upstream_sync_repo: snap-one/docs-driverworks
         upstream_sync_branch: master
         target_sync_branch: master
